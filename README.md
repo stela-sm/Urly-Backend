@@ -91,7 +91,7 @@ The core table `urls` is designed for lightning-fast lookups and keeps a minimal
 | :--- | :--- | :--- | :--- |
 | `id` | `BIGINT` | Primary Key, Auto-increment | Unique record identifier (internal) |
 | `shortcode` | `VARCHAR` | Unique Index | The obfuscated unique hash (e.g. `yL8aX`) |
-| `url` | `VARCHAR` | Required | The long destination URL |
+| `url` | `TEXT` | Required | The long destination URL |
 | `created_at` | `TIMESTAMP` | Default: Current Time | When the shortcode was created |
 
 > [!NOTE]
